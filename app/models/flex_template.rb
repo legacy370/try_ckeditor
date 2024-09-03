@@ -1,0 +1,2 @@
+class FlexTemplate < ApplicationRecord
+end

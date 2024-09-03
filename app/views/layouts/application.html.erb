@@ -6,12 +6,22 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://cdn.skypack.dev/trix/dist/trix.css">
+    <script type="importmap">
+  {
+    "imports": {
+      "ckeditor5": "https://cdn.ckeditor.com/ckeditor5/43.0.0/ckeditor5.js",
+      "ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/43.0.0/",
+      "ckeditor5-premium-features": "https://cdn.ckeditor.com/ckeditor5-premium-features/43.0.0/ckeditor5-premium-features.js",
+      "ckeditor5-premium-features/": "https://cdn.ckeditor.com/ckeditor5-premium-features/43.0.0/"
+    }
+  }
+  </script>
     <script type="module">
       import railsActiontext from 'https://cdn.skypack.dev/@rails/actiontext';
       import trix from 'https://cdn.skypack.dev/trix';
     </script>
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.0.0/ckeditor5.css" />
     <%= javascript_include_tag "application" %>
-
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
 
